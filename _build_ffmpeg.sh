@@ -18,8 +18,9 @@ function build_ffmpeg {
   cd ${src_root}/ffmpeg
 
   # patch the configure script to use an Android-friendly versioning scheme
-  patch -u configure ${patch_root}/ffmpeg-configure.patch >> ${build_log} 2>&1 || \
-    die "Couldn't patch ffmpeg configure script!"
+  # FIZ O PATCH NA MAO PQ ESSA DESGRAÇA NÃO FUNCIONOU
+  #patch -u configure ${patch_root}/ffmpeg-configure.patch >> ${build_log} 2>&1 || \
+  # die "Couldn't patch ffmpeg configure script!"
 
   # run the configure script
   prefix=${src_root}/ffmpeg/android/arm

@@ -49,7 +49,7 @@ function initialize {
   dist_lib_root=${dist_root}/lib
   build_log=${top_root}/build/build.log
   config_file=${top_root}/.build-config.sh
-
+  echo $PWD
   # create our folder structure
   cd ${top_root}
   test -d ${src_root} || mkdir -p ${src_root}
